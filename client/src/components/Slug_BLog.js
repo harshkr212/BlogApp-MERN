@@ -3,6 +3,7 @@ import BlogContext from '../Contextblog/BlogContext'
 import { useParams } from 'react-router-dom';
 
 const Slug_BLog = () => {
+   const host="https://blogapp-backend-8qit.onrender.com"
    const { slug } = useParams();
     const context=useContext(BlogContext);
     const {PostedBlogs}=context;
@@ -22,7 +23,7 @@ const Slug_BLog = () => {
   return (
     <div>
         <div class="card mb-3">
-  <img src={`http://localhost:5000/uploads/${blog.image}`} class="card-img-top" alt="..."/>
+  <img src={`${host}/uploads/${blog.image}`} class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">{blog.title}</h5>
     <p class="card-text">{blog.content}</p>
