@@ -3,7 +3,7 @@ import { useState } from 'react'
 import {  useNavigate } from 'react-router-dom';
 
 const UserState = (props) => {
-    const host="http://localhost:5000";
+    const host="https://blogapp-backend-8qit.onrender.com";
     let navigate=useNavigate();
     const [user,setUser]=useState()
     //Login
