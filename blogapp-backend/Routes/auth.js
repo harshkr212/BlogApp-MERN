@@ -91,10 +91,10 @@ router.post('/login',[body('email').isEmail().withMessage("Enter a valid email")
 //Route 3 Get User details using GET request Login reqired
 router.get('/getuser',fetchuser,async (req,res)=>{
 try {
-   
+       let success=false;
     const newuser=await User.findById(req.user.id);
     if(!newuser){
-        res.status(401).send("Not Found");
+        res.status(401).send("Not found");
     }
     res.json(newuser);
     
