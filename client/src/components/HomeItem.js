@@ -7,7 +7,7 @@ const HomeItem = (props) => {
   return (
     <div>
       <div className="card" style={{ maxWidth: '540px' }}>
-        <img src={`%=${host}/uploads/${props.blog.image}`} className="img-fluid rounded-start" alt="..." />
+        <img src={`${host}/uploads/${props.blog.image}`} className="img-fluid rounded-start" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.blog.title}</h5>
           <p className="card-text">{props.blog.content}</p>
