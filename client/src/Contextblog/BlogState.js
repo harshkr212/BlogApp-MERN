@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 const BlogState = (props) => {
     const [blogs,setBlogs]=useState([]);
     const [pblogs,setPblogs]=useState([])
-    const localhost="http://localhost:5000"
+    const localhost="https://blogapp-backend-8qit.onrender.com"
 
 
     //add a blog 
