@@ -1,5 +1,5 @@
 import React from 'react'
-import imageP from './learn-python.jpg'
+
 
 
 const HomeItem = (props) => {

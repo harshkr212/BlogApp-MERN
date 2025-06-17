@@ -49,7 +49,6 @@ const UserState = (props) => {
 
     }
     const userDetails=async()=>{
-      const token=localStorage.getItem('token');
       try {
          const response=await fetch(`${host}/api/user/getuser`,{
              method:'GET',

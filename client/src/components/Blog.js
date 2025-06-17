@@ -7,8 +7,6 @@ const Blog = () => {
     const [ublog,setUblog]=useState({title:"",content:"",author:"",slug:"",id:""});
     const context = useContext(BlogContext);
     const { getblogs, blogs ,updateBlog} = context;
-    //   const blogdata=  getblogs();
-    //   console.log(blogdata);
     useEffect(() => {
         getblogs();
         // eslint-disable-next-line

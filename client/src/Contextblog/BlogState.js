@@ -126,14 +126,13 @@ const BlogState = (props) => {
     }
     // delete a blog
     const deleteblog=async(id)=>{
-        const response=await fetch(`${localhost}/api/blogs/deleteblog/${id}`,{
+        await fetch(`${localhost}/api/blogs/deleteblog/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':"application/json",
                 'auth-token':localStorage.getItem('token')
             }
         })
-        const json=await response.json();
         let newBlogs=blogs.filter((blog)=>{return blog._id!==id});
         setBlogs(newBlogs);
 

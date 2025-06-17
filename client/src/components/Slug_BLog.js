@@ -22,12 +22,12 @@ const Slug_BLog = () => {
 
   return (
     <div>
-        <div class="card mb-3">
-  <img src={`${host}/uploads/${blog.image}`} class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">{blog.title}</h5>
-    <p class="card-text">{blog.content}</p>
-    <p class="card-text"><small class="text-body-secondary">By - {blog.author} on {blog.date}</small></p>
+        <div className="card mb-3">
+  <img src={`${host}/uploads/${blog.image}`} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">{blog.title}</h5>
+    <p className="card-text">{blog.content}</p>
+    <p className="card-text"><small className="text-body-secondary">By - {blog.author} on {blog.date}</small></p>
   </div>
 </div>
       

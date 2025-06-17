@@ -20,7 +20,6 @@ const Addblog = () => {
   formData.append("author", blog.author);
   formData.append("slug", blog.slug);
   if (image) formData.append("image", image);
-  console.log(formData);
 
   await addBlogWithImage(formData);
   setBlog({ title: "", content: "", author: "", slug: "" });

@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import imageP from './learn-python.jpg'
 import BlogContext from '../Contextblog/BlogContext'
 const Blogpage = (props) => {
   const host="https://blogapp-backend-8qit.onrender.com"
