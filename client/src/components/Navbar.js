@@ -19,6 +19,7 @@ const Navbar = () => {
   }
   useEffect(() => {
      const token=localStorage.getItem('token');
+      
       if(token){
          try {
         userDetails();

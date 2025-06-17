@@ -3,14 +3,9 @@ import BlogContext from '../Contextblog/BlogContext'
 
 const Addblog = () => {
     const context=useContext(BlogContext);
-    const { addblog ,addBlogWithImage}=context;
+    const {addBlogWithImage}=context;
     const [image,setImage]=useState(null);
     const [blog,setBlog]=useState({title:"",content:"",author:"",slug:""})
-    // const handleSubmit=(e)=>{
-    //     e.preventDefault();
-    //     addblog(blog.title,blog.content,blog.author,blog.slug);
-    //     setBlog({title:"",content:"",author:"",slug:""})
-    // }
     const handleSubmit = async (e) => {
   e.preventDefault();
 
